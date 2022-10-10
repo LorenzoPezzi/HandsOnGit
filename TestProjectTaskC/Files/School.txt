@@ -1,0 +1,12 @@
+﻿[
+{
+"name":"Scuola A",
+"address" : "Piazza la bomba e scappa",
+"id": 1,
+},
+{
+"name":"Scuola B",
+"address" : "via le mani dal naso",
+"id": 2,
+}
+]

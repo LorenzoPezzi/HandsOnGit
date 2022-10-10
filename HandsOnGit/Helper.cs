@@ -1,7 +1,12 @@
 ﻿namespace HandsOnGit
 {
-    internal static class Helper
+    public static class Helper
     {
+        private static string _filePath = "./../../../files/School.txt";
+        public static string GetFilePath()
+        {
+            return _filePath;
+        }
         public static string Read(string file)
         {
             String line;

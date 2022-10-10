@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HandsOnGit
 {
-    internal class School
+    public class School
     {
         public string name { get; set; }
         public string address { get; set; }
