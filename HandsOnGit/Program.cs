@@ -1,4 +1,5 @@
 ﻿using HandsOnGit.Model;
+using System.Diagnostics;
 
 public class Program
 { 
@@ -9,7 +10,9 @@ public class Program
 
         Console.WriteLine(FileManager.FileNameCheck( fileName));
 
-
+        Console.WriteLine( AppDomain.CurrentDomain.BaseDirectory);
+    C: \Users\aroti\Desktop\HandsOnGit\HandsOnGit\bin\Debug\net6.0\
+    C: \Users\aroti\Desktop\HandsOnGit\HandsOnGit\Files\
 
     }
 
