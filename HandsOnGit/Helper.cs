@@ -2,7 +2,10 @@
 {
     internal static class Helper
     {
-        public static int fileCount = Directory.GetFiles("C:\\Users\\ilfer\\Desktop\\handson\\HandsOnGit\\Files\\").Length;
+
+        public static string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
+        public static string fullPath = Path.Combine(currentDirectory, @"..\..\..\Files");
+        public static int fileCount = Directory.GetFiles(fullPath).Length;
 
         public static bool FindSchoolFile()
         {
