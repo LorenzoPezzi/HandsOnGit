@@ -12,5 +12,11 @@ namespace HandsOnGit.Model
         public string lastName { get; set; }
         public int SchoolId { get; set; }
 
+        public Teacher(string firstName, string lastName, int schoolId)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            SchoolId = schoolId;
+        }
     }
 }

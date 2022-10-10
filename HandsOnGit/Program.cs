@@ -7,17 +7,18 @@ public class Program
     static void Main()
     {
 
-        //var fileName = "School.txt";
+        var fileName = "School.txt";
 
-        //Console.WriteLine(FileManager.FileNameCheck(fileName));
+        Console.WriteLine(FileManager.FileNameCheck(fileName));
 
-        string filePath = "C:\\Users\\Alessandro\\source\\repos\\HandsOnGit\\HandsOnGit\\Files\\Teacher.txt";
+        string filePath = "Teacher.txt"; 
         var teachersList = JsonFileManager.DeserializeObjects<Teacher>(filePath);
         
-        var teacherWithScoolId = JsonFileManager.RemoveTeachersWithoutSchoolId(teachersList);
-        foreach (var t in teacherWithScoolId) Console.WriteLine(t.lastName);
+        var teacherWithSchoolId = JsonFileManager.RemoveTeachersWithoutSchoolId(teachersList);
 
-        JsonFileManager.WriteOnTeacherFile(filePath, teachersList);
+        string studentFile = "Student.txt";
+        Teacher student = new Teacher("Pinco", "Pallino", 2);
+        JsonFileManager.WriteStudentOnFile(student,studentFile);
 
 
     }

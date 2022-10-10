@@ -1,1 +1,1 @@
-[{"firstName":"Giovanni","lastName":"Panascia","SchoolId":2},{"firstName":"Lorenzo","lastName":"Pezzi","SchoolId":1},{"firstName":"Simone","lastName":"Di Stasio","SchoolId":0}]
+[{"firstName":"Giovanni","lastName":"Panascia","SchoolId":2},{"firstName":"Lorenzo","lastName":"Pezzi","SchoolId":1}]
