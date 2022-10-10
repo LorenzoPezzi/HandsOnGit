@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace HandsOnGit.Model
@@ -38,8 +40,21 @@ namespace HandsOnGit.Model
             for (int i = 0; i < fileInfos.Length; i++)
                 size+= fileInfos[i].Length;
             return size/fileInfos.Length;
-            
+
         }
-         
+
+        public static bool ConvertJsonSchoolToListSchool()
+        {
+            string path = FolderPath + "\\School.txt";
+            string listOfSchool = File.ReadAllText(path);
+            var json = JsonSerializer.Deserialize<List<School>>(listOfSchool);
+
+            foreach (var schools in json)
+            {
+                Console.WriteLine(schools.Name + " " + schools.Address + " " + schools.Id);
+            }
+
+            return true;
+        }
     }
 }
