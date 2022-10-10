@@ -8,5 +8,7 @@ namespace HandsOnGit.Model
 {
     public static class FileManager
     {
+
+        // string pathC = "C:\\Users\\diana\\source\\repos\\HandsOnGit\\HandsOnGit\\Files\\School";
     }
 }
