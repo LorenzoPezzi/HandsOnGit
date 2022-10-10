@@ -47,7 +47,7 @@ namespace HandsOnGit.Model
 
         }
 
-        public static bool ConvertJsonSchoolToListSchool()
+        public static List<School> ConvertJsonSchoolToListSchool()
         {
             string path = FolderPath + "\\School.txt";
             string listOfSchools = File.ReadAllText(path);
@@ -58,7 +58,7 @@ namespace HandsOnGit.Model
                 Console.WriteLine($"Name: {school.name}, Address: {school.address}, Id: {school.id}");
             }
 
-            return true;
+            return jsonSchool;
         }
     }
 }
