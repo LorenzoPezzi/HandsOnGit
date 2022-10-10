@@ -31,7 +31,7 @@ namespace HandsOnGit.Model
 
         public static double FileAverage()
         {
-            DirectoryInfo d = new DirectoryInfo("C:\\Users\\hp\\Source\\Repos\\HandsOnGit\\HandsOnGit\\Files");
+            DirectoryInfo d = new DirectoryInfo(FolderPath);
             FileInfo[] fileInfos = d.GetFiles();
 
             long size = 0;
