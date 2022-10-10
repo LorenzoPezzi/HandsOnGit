@@ -28,6 +28,18 @@ namespace HandsOnGit.Model
 
             return false;
         }
+
+        public static double FileAverage()
+        {
+            DirectoryInfo d = new DirectoryInfo("C:\\Users\\hp\\Source\\Repos\\HandsOnGit\\HandsOnGit\\Files");
+            FileInfo[] fileInfos = d.GetFiles();
+
+            long size = 0;
+            for (int i = 0; i < fileInfos.Length; i++)
+                size+= fileInfos[i].Length;
+            return size/fileInfos.Length;
+            
+        }
          
     }
 }
