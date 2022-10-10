@@ -17,42 +17,22 @@ namespace HandsOnGit.Model
         public string path = "C:\\Users\\diana\\source\\repos\\HandsOnGit\\HandsOnGit\\Files\\School.txt";
         public bool Read()
         {
-            //using (var sr = new StreamReader(path))
-            //{
-
-
-            //    List<string> listOfSchools = new List<string>();
-            //    var schoolFile = File.ReadAllLines(path);
-            //    foreach (var line in schoolFile)
-            //    {
-            //        if (line.Contains("name"))
-            //        {
-            //          line.Substring(line.IndexOf(":"), line.IndexOf(","));
-            //          listOfSchools.Add(line.Trim());
-            //        }
-            //    }
-            //}
-
             string listOfSchool = File.ReadAllText(path);
-            var json = JsonSerializer.Deserialize<List<School>>(listOfSchool); //.Select((s => s.Split(',')));
-            //JsonConvert.SerializeObject(ListOfSchool);
+            var json = JsonSerializer.Deserialize<List<School>>(listOfSchool);
+
             foreach(var schools in json)
             {
-                Console.WriteLine(schools.name+" "+ schools.address+" "+schools.id);
+                Console.WriteLine(schools.Name+" "+ schools.Address+" "+schools.Id);
             }
-            
 
             return true;
         }
 
         public class School
         {
-
-            public string name { get; set; }
-            public string address { get; set; }
-            public int id { get; set; }
-
-
+            public string Name { get; set; }
+            public string Address { get; set; }
+            public int Id { get; set; }
         }
 
 
