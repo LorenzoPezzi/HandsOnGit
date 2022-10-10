@@ -14,6 +14,16 @@
             }
             return false;
         }
+
+        public static void WriteStudentFile(string json)
+        {
+            string studentFilePath = "C:\\Users\\ilfer\\Desktop\\handson\\HandsOnGit\\Files\\Student.txt";
+            using (StreamWriter sw = new StreamWriter(studentFilePath))
+            {
+                sw.WriteLine(json);
+            }
+
+        }
     }
 }
 

@@ -1,1 +1,1 @@
-﻿
+[{"FirstName":"Riccardo","LastName":"Stagni","SchoolId":0},{"FirstName":"Francesco","LastName":"Fera","SchoolId":1}]
