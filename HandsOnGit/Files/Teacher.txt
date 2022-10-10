@@ -1,0 +1,17 @@
+﻿[
+{
+"firstname":"Giovanni",
+"lastname" : "Panascia",
+"SchoolId": 2,
+},
+{
+"firstname":"Lorenzo",
+"lastname" : "Pezzi",
+"SchoolId": 1,
+},
+{
+"firstname":"Simone",
+"lastname" : "Di Stasio",
+"SchoolId": 0,
+},
+]
