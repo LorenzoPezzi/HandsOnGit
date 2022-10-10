@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HandsOnGit", "HandsOnGit\HandsOnGit.csproj", "{32A939B5-F1DF-42B9-B412-C8DAFAE21492}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjectTaskC", "TestProjectTaskC\TestProjectTaskC.csproj", "{BB064F19-325E-4D30-9D76-116084607539}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjectTaskH", "TestProjectTaskH\TestProjectTaskH.csproj", "{8BBE2135-FD86-4AD4-9AED-FB7E41C7C7E4}"
 EndProject
 Global
@@ -17,10 +19,10 @@ Global
 		{32A939B5-F1DF-42B9-B412-C8DAFAE21492}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32A939B5-F1DF-42B9-B412-C8DAFAE21492}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32A939B5-F1DF-42B9-B412-C8DAFAE21492}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8BBE2135-FD86-4AD4-9AED-FB7E41C7C7E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8BBE2135-FD86-4AD4-9AED-FB7E41C7C7E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8BBE2135-FD86-4AD4-9AED-FB7E41C7C7E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8BBE2135-FD86-4AD4-9AED-FB7E41C7C7E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB064F19-325E-4D30-9D76-116084607539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB064F19-325E-4D30-9D76-116084607539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB064F19-325E-4D30-9D76-116084607539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB064F19-325E-4D30-9D76-116084607539}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
