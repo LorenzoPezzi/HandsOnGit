@@ -8,9 +8,11 @@ namespace HandsOnGit.Model
 {
     public static class FileManager
     {
-        
-        public static bool FileNameCheck(DirectoryInfo folder, string fileName)
+        private static string baseDir = AppDomain.CurrentDomain.BaseDirectory 
+                                        + "..\\..\\..\\Files";
+        public static bool FileNameCheck(string fileName)
         {
+            DirectoryInfo folder = new DirectoryInfo(baseDir);
             FileInfo[] Files = folder.GetFiles(); //Getting all files
             Console.WriteLine("Number of files in the folder: " + Files.Length);
 
