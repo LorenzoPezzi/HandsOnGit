@@ -1,4 +1,4 @@
-﻿unamespace HandsOnGit;
+﻿namespace HandsOnGit;
 
 internal static class Helper
 {
