@@ -19,8 +19,14 @@ namespace Tests
             var teachersList = JsonFileManager.DeserializeObjects<Teacher>("Teacher.txt");
             Assert.True(teachersList.Count >= 2);
             Assert.True(JsonFileManager.WriteOnTeacherFile("Teacher.txt", teachersList));
-            Teacher student = new Teacher("Pinco", "Pallino", 2);
-            Assert.True(JsonFileManager.WriteStudentOnFile(student, "School.txt"));
+        }
+
+        [Fact]
+        public void Test3()
+        {
+                Teacher student = new Teacher("Pinco", "Pallino", 2);
+                Assert.True(JsonFileManager.WriteStudentOnFile(student, "School.txt"));
+            
         }
 
     }
