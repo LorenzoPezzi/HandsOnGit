@@ -8,5 +8,12 @@ namespace HandsOnGit.Model
 {
     public static class FileManager
     {
+        public static int FileCounter(DirectoryInfo d)
+        {
+
+
+            return 0;
+        }
+         
     }
 }
