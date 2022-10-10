@@ -9,7 +9,6 @@ public class Program
         List<School> schoolList = new List<School>();
         
         string fileSchool = "./../../../files/School.txt";
-
         string text=Helper.Read(fileSchool);
         
         text = text.Replace(",},","}*").Replace("[","").Replace(",}]", "}");
