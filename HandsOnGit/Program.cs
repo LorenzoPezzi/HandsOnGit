@@ -1,10 +1,11 @@
-﻿namespace HandsOnGit;
+﻿using System.Text.Json;
+
+namespace HandsOnGit;
 
 internal class Program
 {
     static void Main()
     {
-
-        Console.WriteLine(Helper.FolderPath);
+        
     }
 }
