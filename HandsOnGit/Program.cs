@@ -20,6 +20,7 @@ public class Program
         Teacher student = new Teacher("Pinco", "Pallino", 2);
         JsonFileManager.WriteStudentOnFile(student,studentFile);
 
+        Console.WriteLine(FileManager.ConvertJsonSchoolToListSchool());
 
     }
 }
