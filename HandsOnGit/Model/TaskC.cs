@@ -38,7 +38,7 @@ namespace HandsOnGit.Model
             //JsonConvert.SerializeObject(ListOfSchool);
             foreach(var schools in json)
             {
-                Console.WriteLine(schools.name);
+                Console.WriteLine(schools.name+" "+ schools.address+" "+schools.id);
             }
             
 
