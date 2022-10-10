@@ -10,6 +10,12 @@ namespace HandsOnGit.Model
     {
         private static string FolderPath = AppDomain.CurrentDomain.BaseDirectory 
                                         + "..\\..\\..\\Files";
+        /// <summary>
+        ///     Get a file Name as parameter and return true if it is present in the folder
+        ///     with path "AppDomain.CurrentDomain.BaseDirectory + "..\\..\\..\\Files""
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <returns>True or False</returns>
         public static bool FileNameCheck(string fileName)
         {
             DirectoryInfo Folder = new DirectoryInfo(FolderPath);
