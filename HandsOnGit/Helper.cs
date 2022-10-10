@@ -4,6 +4,7 @@ internal static class Helper
 {
     public static string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
     public static string FolderPath { get; private set; } = $"{currentDirectory}..\\..\\..\\Files";
+    public static int fileCount = Directory.GetFiles(FolderPath).Length;
 
     public static double GetAVGFileSize()
     {
