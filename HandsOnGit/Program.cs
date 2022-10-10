@@ -9,6 +9,7 @@ public class Program
         var fileName = "School.txt";
 
         Console.WriteLine(FileManager.FileNameCheck( fileName));
-
+        Console.WriteLine(FileManager.FileAverage());
+        Console.WriteLine(FileManager.ConvertJsonSchoolToListSchool());
     }
 }

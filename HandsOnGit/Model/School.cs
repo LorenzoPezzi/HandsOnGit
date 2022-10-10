@@ -8,8 +8,8 @@ namespace HandsOnGit.Model
 {
     public class School
     {
-        public string Name { get; set; }
-        public string Address { get; set; }
-        public int Id { get; set; }
+        public string? name { get; set; }
+        public string? address { get; set; }
+        public int id { get; set; }
     }
 }
