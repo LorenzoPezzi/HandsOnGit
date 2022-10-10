@@ -9,8 +9,8 @@
 
         public static bool FindSchoolFile()
         {
-            var allFiles = Directory.GetFiles("C:\\Users\\ilfer\\Desktop\\handson\\HandsOnGit\\Files\\");
-            string schoolFile = "C:\\Users\\ilfer\\Desktop\\handson\\HandsOnGit\\Files\\School.txt";
+            var allFiles = Directory.GetFiles(fullPath);
+            string schoolFile = Path.Combine(fullPath, @"\School.txt");
             if (allFiles.Contains(schoolFile))
             {
                 return true;
