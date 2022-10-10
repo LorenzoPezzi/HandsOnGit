@@ -21,6 +21,7 @@ namespace HandsOnGit.Model
         {
             DirectoryInfo Folder = new DirectoryInfo(FolderPath);
             FileInfo[] Files = Folder.GetFiles(); //Getting all files
+
             Console.WriteLine("Number of files in the folder: " + Files.Length);
 
             foreach (FileInfo File in Files)
@@ -34,7 +35,6 @@ namespace HandsOnGit.Model
         {
             DirectoryInfo d = new DirectoryInfo(FolderPath);
             FileInfo[] fileInfos = d.GetFiles();
-
             long size = 0;
             for (int i = 0; i < fileInfos.Length; i++)
                 size+= fileInfos[i].Length;
